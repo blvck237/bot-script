@@ -274,6 +274,7 @@ XMLHttpRequest.prototype.send = async function () {
   // var endPoints = ['http://localhost:3000'];
   // Check if one of the endpoints is in the url
   var isEndPoint = endPoints.some((endPoint) => this._openArgs.url.startsWith(endPoint));
+  console.log(isEndPoint)
   if (isEndPoint) {
     // Send the tracking data to the server
     evaluateRequest.apply(this, arguments);
@@ -302,6 +303,7 @@ async function evaluateRequest() {
   };
   _userActions = [];
   requestStart = Date.now();
+  console.log(botHunterApiUrl)
   fetch(botHunterApiUrl, {
     method: 'POST',
     headers: {
