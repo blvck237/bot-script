@@ -1,5 +1,5 @@
 var isSuspicious = false;
-var botHunterApiUrl = 'http://localhost:3600';
+var botHunterApiUrl = 'https://bot-hunter-77.loca.lt';
 
 // Retrieve client IP and location
 function getClientIp() {
