@@ -1,5 +1,5 @@
 var isSuspicious = false;
-var botHunterApiUrl = 'https://bot-hunter-77.loca.lt';
+var botHunterApiUrl = 'http://ec2-13-37-212-192.eu-west-3.compute.amazonaws.com:3600';
 
 // Retrieve client IP and location
 function getClientIp() {
